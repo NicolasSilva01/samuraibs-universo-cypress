@@ -1,4 +1,4 @@
-//import Sinup from '../support/Pages/Sinup'
+import Sinup from '../support/Pages/Sinup'
 import signupPage from '../support/Pages/Sinup'
 
 describe('Cadastro', function () {
@@ -107,12 +107,12 @@ describe('Cadastro', function () {
   context('Quando não preencho nenhum dos campos', function() {
 
     const alertMessages = [
-      'Nome é obrigatório' 
-      //'E-mail é obrigatório', 
-      //'Senha é obrigatória'
+      'Nome é obrigatório',
+      'E-mail é obrigatório', 
+      'Senha é obrigatória'
     ]
 
-    before(function(){
+    beforeEach(function(){
       signupPage.go()
       signupPage.submit()
     })
